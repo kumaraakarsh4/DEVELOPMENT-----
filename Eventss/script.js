@@ -18,5 +18,5 @@ hell.addEventListener('click', function(){
 })
 hello.addEventListener('click',function(){
   clearInterval(interval)
-  console.log("Stop Printing",Date.now())
+  console.log("Stop Printing",Date.now() )
 })
