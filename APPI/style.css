@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    color: aqua;
+   
+}
+body{
+    background-color: black;
+    display: flex;             /* 1. Enable Flexbox on the parent (body) */
+    justify-content: center;   /* 2. Center items horizontally along the main axis */
+    align-items: center;       /* 3. Center items vertically along the cross axis (Optional: but useful for overall centering) */
+    flex-direction: column;    
+    
+    /* Ensure body takes full viewport height for proper vertical centering */
+    min-height: 100vh;         
+    margin: 0;         
+}
+#GetDetails{
+    color: blue;
+    background-color:aqua;
+    text-align: center;
+}
