@@ -74,3 +74,22 @@ async function consumepromise(){
  }
 }
 consumepromise()
+
+// new aysnc syntax for API call using try catch .......
+
+async function getuser(){
+ try {
+    const response = await   fetch('https://api.github.com/users/Aakarshkumar')
+  
+    
+const data = await response.json()
+console.log(data);
+    
+ } catch (error) {
+    console.log(error,"");
+    
+    
+ }
+
+}
+getuser()
