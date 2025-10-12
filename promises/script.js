@@ -47,3 +47,30 @@ promisefour.then((user) => {
     console.log(er);
     
 })
+
+// second implementation of promise by using async and try catch syntax
+
+const promisefive = new Promise(function(resolve,reject){
+   setTimeout(function(){
+        let error = true;
+        if(!error){
+            resolve({username:'Aakarsh' , password : '123'});
+            
+        }else{
+            reject("something went wrong")
+        }
+        
+    },1000) 
+});
+async function consumepromise(){
+ try {
+      const response =  await promisefive;
+   console.log(response);
+   
+ } catch (error) {
+    console.log(error);
+    
+    
+ }
+}
+consumepromise()
