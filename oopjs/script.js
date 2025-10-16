@@ -16,6 +16,10 @@ function user(username,logincount,signedIn){
     this.username = username;
     this.logincount = logincount;
     this.signedIn = signedIn;
+    this.greeting = function(){
+        console.log(`welcome ${this.username}`);
+        
+    }
     return this
 }
 const userone = new user("Aakarsh", 8 , true);
