@@ -3,7 +3,7 @@ const user ={
     logincount : 8,
     signedIn : true,
     getUserDetails: function(){
-        console.log("Got the user details from database");
+        console.log(`username:${this.username}`);
         
     }
 }
