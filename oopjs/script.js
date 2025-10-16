@@ -27,6 +27,8 @@
 // console.log(userone.constructor);
 // console.log(usertwo);
 
+// prototype topic 
+
 function multiple(num){
     return num*5;
 }
@@ -35,7 +37,21 @@ console.log(multiple(5));
 console.log(multiple.power);
 console.log(multiple.prototype);
 
-
+function createuser(username,score){
+    this.username = username;
+    this.score = score;
+}
+createuser.prototype.increment = function(){
+    score++;
+}
+createuser.prototype.print = function(){
+    console.log(`Score price is ${this.score}`);
+    
+}
+const chai =  new createuser('chai' ,25)
+const tea = new createuser('Tea' , 250)
+chai.print()
+tea.print()
 
 
 
