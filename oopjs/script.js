@@ -1,9 +1,12 @@
 const user ={
     username : "Aakarsh",
     logincount : 8,
-    signedIn : true
+    signedIn : true,
+    getUserDetails: function(){
+        console.log("Got the user details from database");
+        
+    }
 }
 console.log(user.username);
-console.log(user.logincount);
-console.log(user.signedIn);
+console.log(user.getUserDetails());
 
