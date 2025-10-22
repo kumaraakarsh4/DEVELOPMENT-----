@@ -53,18 +53,28 @@
 // chai.print()
 // tea.print()
 
-function setusername(username){
-    this.username = username
-}
+// function setusername(username){
+//     this.username = username
+// }
 
-function createuser(username,email,password,){
-    setusername.call(this,username)
-    this.email = email
+// function createuser(username,email,password,){
+//     setusername.call(this,username)
+//     this.email = email
     
-    this.password = password
-}
-const print = new createuser("Aakarsh4" , "kumaraakarsh49@gmail.com" , "123")
-console.log(print);
+//     this.password = password
+// }
+// const print = new createuser("Aakarsh4" , "kumaraakarsh49@gmail.com" , "123")
+// console.log(print);
 
+
+// CLASS CONSTRUCTOR AND STATIC
+
+class user{
+    constructor(username,email,password){
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
+}
 
 
