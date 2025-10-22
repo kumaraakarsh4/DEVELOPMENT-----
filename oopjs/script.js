@@ -75,6 +75,17 @@ class user{
         this.email = email;
         this.password = password;
     }
+    encryptPassword(){
+        return `${this.password}abc`
+    } 
+    changeuser(){
+        return `${this.username.toUpperCase()}`
+    }
 }
+const print = new user("Aakarsh4" , "kumaraakarsh766@gmail.com" , "12345")
+console.log(print.encryptPassword());
+console.log(print.changeuser());
+
+
 
 
