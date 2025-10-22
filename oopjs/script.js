@@ -53,8 +53,15 @@
 // chai.print()
 // tea.print()
 
-let name = "Aakarsh"
-console.log(name.length);
+function setusername(username){
+    this.username = username
+}
 
+function createuser(email,password,username){
+    setusername(username)
+    this.email = email
+    
+    this.password = password
+}
 
 
