@@ -69,23 +69,48 @@
 
 // CLASS CONSTRUCTOR AND STATIC
 
+// class user{
+//     constructor(username,email,password){
+//         this.username = username;
+//         this.email = email;
+//         this.password = password;
+//     }
+//     encryptPassword(){
+//         return `${this.password}abc`
+//     } 
+//     changeuser(){
+//         return `${this.username.toUpperCase()}`
+//     }
+// }
+// const print = new user("Aakarsh4" , "kumaraakarsh766@gmail.com" , "12345")
+// console.log(print.encryptPassword());
+// console.log(print.changeuser());
+
+
 class user{
-    constructor(username,email,password){
-        this.username = username;
-        this.email = email;
-        this.password = password;
+    constructor(username){
+        this.username = username
     }
-    encryptPassword(){
-        return `${this.password}abc`
-    } 
-    changeuser(){
-        return `${this.username.toUpperCase()}`
+    logMe(){
+        console.log(`USERNAME Is ${this.username}`);
+        
     }
 }
-const print = new user("Aakarsh4" , "kumaraakarsh766@gmail.com" , "12345")
-console.log(print.encryptPassword());
-console.log(print.changeuser());
+class Teacher extends user{
+    constructor(username ,email,password){
+        super(username)
+        this.email = email
+        this.password = password
+    }
+    addcourse(){
+        console.log(`Cousrse Added By ${this.username}`);
+        
+    }
 
+}
+const print = new Teacher("Aakarsh4" , "Aakarsh@teacher.com" , "123456")
 
+print.addcourse()
+console.log(print instanceof user);
 
 
