@@ -87,30 +87,60 @@
 // console.log(print.changeuser());
 
 
-class user{
-    constructor(username){
-        this.username = username
-    }
-    logMe(){
-        console.log(`USERNAME Is ${this.username}`);
+// class user{
+//     constructor(username){
+//         this.username = username
+//     }
+//     logMe(){
+//         console.log(`USERNAME Is ${this.username}`);
         
-    }
-}
-class Teacher extends user{
-    constructor(username ,email,password){
-        super(username)
-        this.email = email
-        this.password = password
-    }
-    addcourse(){
-        console.log(`Cousrse Added By ${this.username}`);
+//     }
+// }
+// class Teacher extends user{
+//     constructor(username ,email,password){
+//         super(username)
+//         this.email = email
+//         this.password = password
+//     }
+//     addcourse(){
+//         console.log(`Cousrse Added By ${this.username}`);
         
-    }
+//     }
 
+// }
+// const print = new Teacher("Aakarsh4" , "Aakarsh@teacher.com" , "123456")
+
+// print.addcourse()
+// console.log(print instanceof user);
+
+// class react{
+//     constructor(){
+//         this.library = "React"
+//         this.server = "https//local host :3000"
+//         document.querySelector('button').addEventListener('click' , this.handleclick.bind(this))
+        
+        
+//     }
+//     handleclick(){
+//         console.log("button clicked");
+//         console.log(this.server);
+        
+        
+//     }
+// }
+
+
+const chai = {
+    name: 'chocolate tea',
+    price : 320 ,
+    isavailaible : true
 }
-const print = new Teacher("Aakarsh4" , "Aakarsh@teacher.com" , "123456")
+// console.log(Object.getOwnPropertyDescriptor(chai,'name'));
+Object.defineProperty(chai,'name',{
+        writable: false,
+     enumerable: false
 
-print.addcourse()
-console.log(print instanceof user);
+})
+console.log(Object.getOwnPropertyDescriptor(chai,'name'));
 
 
