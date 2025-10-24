@@ -10,7 +10,7 @@ class user{
         this.emails = value.toUpperCase()
     }
     get password(){
-        return this.passwords
+        return `${this.passwords}aakarsh`.toUpperCase()
     }
     set password(value){
         this.passwords = value.toUpperCase()
