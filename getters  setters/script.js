@@ -20,21 +20,28 @@
 // console.log(print.password);
 // console.log(print.email);
 
-function init(){
-    let name = "Morzilla";
-    function displayname(){
-        let secret = "my123"
-        console.log(name);
+// function init(){
+//     let name = "Morzilla";
+//     function displayname(){
+//         let secret = "my123"
+//         console.log(name);
        
 
         
-    }
-    function inner(){
-        console.log(secret);
+//     }
+//     function inner(){
+//         console.log(secret);
         
         
-    }
-    displayname();
-    inner();
+//     }
+//     displayname();
+//     inner();
+// }
+// init();
+
+document.getElementById("orange").onclick=function(){
+    document.body.style.backgroundColor = `orange`
 }
-init();
+document.getElementById("green").onclick=function(){
+    document.body.style.backgroundColor = `green`
+}
