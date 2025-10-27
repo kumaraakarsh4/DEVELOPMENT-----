@@ -23,10 +23,18 @@
 function init(){
     let name = "Morzilla";
     function displayname(){
+        let secret = "my123"
         console.log(name);
+       
 
         
     }
+    function inner(){
+        console.log(secret);
+        
+        
+    }
     displayname();
+    inner();
 }
 init();
